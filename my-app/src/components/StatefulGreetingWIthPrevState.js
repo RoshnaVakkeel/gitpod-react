@@ -1,5 +1,7 @@
 import React from "react";	
-class StatefulGreetingWithCallback extends React.Component {	
+
+
+class StatefulGreetingWIthPrevState extends React.Component {	
   constructor(props) {	
     super(props);	
     this.state = {	
@@ -9,8 +11,8 @@ class StatefulGreetingWithCallback extends React.Component {
   }	
   handleClick() {	
     this.setState({	
-      introduction: "Goodbye!",	
-      buttonText: 'Enter'	
+      introduction: this.state.introduction === "Hello!" ? "Goodbye!" : "Hello!",	
+      buttonText: this.state.buttonText === "Exit" ? "Enter!" : "Exit",
     }, ()=>{	
         console.log('new state', this.state.introduction);	
         console.log('new state', this.state.buttonText);	
@@ -31,4 +33,4 @@ class StatefulGreetingWithCallback extends React.Component {
     );	
   }	
 }	
-export default StatefulGreetingWithCallback;
+export default StatefulGreetingWIthPrevState;
