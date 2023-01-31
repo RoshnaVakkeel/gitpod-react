@@ -14,11 +14,13 @@ import './App.css';
 // import MethodsAsPropsParent from './components/MethodsAsPropsParent';
 // import Clock from './components/Clock';
 import ControlledForm from './components/ControlledForm';
+import SearchBar from './components/SearchBar';
 
 
 function App() {
   return (
     <div className="App">
+      <SearchBar />
       <ControlledForm />
       {/* <ConditionalRenderingClass /> */}
       {/* <Clock />
