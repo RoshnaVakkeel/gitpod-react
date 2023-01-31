@@ -12,13 +12,14 @@ import './App.css';
 // import ConditionalRenderingClass from './components/ConditionalRendering';
 import NestingComponents from './components/NestingComponents'; 
 import MethodsAsPropsParent from './components/MethodsAsPropsParent';
-
+import Clock from './components/Clock';
 
 
 function App() {
   return (
     <div className="App">
       {/* <ConditionalRenderingClass /> */}
+      <Clock />
       <MethodsAsPropsParent />
       <NestingComponents />
       {/* <EventsFunctional />
