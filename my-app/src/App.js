@@ -10,18 +10,20 @@ import './App.css';
 // import EventsClass from './components/EventsClass';
 // import EventBinding from './components/EventBinding'
 // import ConditionalRenderingClass from './components/ConditionalRendering';
-import NestingComponents from './components/NestingComponents'; 
-import MethodsAsPropsParent from './components/MethodsAsPropsParent';
-import Clock from './components/Clock';
+// import NestingComponents from './components/NestingComponents'; 
+// import MethodsAsPropsParent from './components/MethodsAsPropsParent';
+// import Clock from './components/Clock';
+import ControlledForm from './components/ControlledForm';
 
 
 function App() {
   return (
     <div className="App">
+      <ControlledForm />
       {/* <ConditionalRenderingClass /> */}
-      <Clock />
+      {/* <Clock />
       <MethodsAsPropsParent />
-      <NestingComponents />
+      <NestingComponents /> */}
       {/* <EventsFunctional />
       <EventsClass /> */}
       {/* <EventBinding />
@@ -30,7 +32,7 @@ function App() {
       <StatefulGreeting greeting="I'm a stateful class component!" name="Mike"/>
       <StatefulGreetingWithCallback greeting="I'm a stateful class component with callback function!" name="Mike"/>
       <StatefulGreetingWIthPrevState greeting="I'm a stateful class component with callback function and previous value return!" name="Mike"/>
-      <StatefulGreetingWithPrevStateWithIncrement greeting="I'm a stateful class component with callback function with increment!" name="Mike"/> */} */}
+      <StatefulGreetingWithPrevStateWithIncrement greeting="I'm a stateful class component with callback function with increment!" name="Mike"/> */}
       {/* <StatefulGreetingWithPrevStateWithIncrementFix greeting="I'm a stateful class component with callback function with increment Fix!" name="Mike"/> */}
     </div>
   );
